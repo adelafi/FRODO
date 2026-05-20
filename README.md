@@ -1,33 +1,33 @@
-FRODO: Functional Relationships and Ordination Data Observer
+# FRODO: Functional Relationships and Ordination Data Observer
 
 FRODO is an interactive web application built with Streamlit designed for the analysis and visualization of functional annotations of bacterial genomes (e.g., KO numbers, Pfams, EC codes) in the context of their taxonomy.
 
 ---
 
-## INSTALLATION AND SETUP
+# INSTALLATION AND SETUP
 
 The application requires Python 3.8 or higher.
 
-### 1. Environment Setup
+## 1. Environment Setup
 It is highly recommended to use a virtual environment to manage dependencies and avoid conflicts:
 
-# Create a virtual environment
+### Create a virtual environment
 python -m venv venv
 
-# Activate the environment (Linux/Mac)
+### Activate the environment (Linux/Mac)
 source venv/bin/activate
 
-# Activate the environment (Windows)
+### Activate the environment (Windows)
 venv\\Scripts\\activate
 
-### 2. Installing Dependencies
+## 2. Installing Dependencies
 The project includes a 'requirements.txt' file. You can install all necessary libraries (including scientific packages like scikit-bio, scipy, and scikit-learn) by running:
 
 pip install -r requirements.txt
 
 ---
 
-## RUNNING THE APPLICATION
+# RUNNING THE APPLICATION
 
 Once the libraries are installed, launch the application from the root directory using:
 
@@ -37,7 +37,7 @@ After running this command, the app will be available in your browser at: http:/
 
 ---
 
-## LIBRARY MANAGEMENT & AUTOMATIC CHECKS
+# LIBRARY MANAGEMENT & AUTOMATIC CHECKS
 
 The application is "smart" about dependencies. It includes a built-in check_dependencies() function that runs every time you start the app.
 
@@ -49,7 +49,7 @@ The application will stop and display a clear message in the browser with the ex
 
 ---
 
-## DATA REQUIREMENTS
+# DATA REQUIREMENTS
 
 To perform an analysis, you need two tab-separated (.tsv) files:
 
@@ -63,7 +63,7 @@ The application features an automatic cleaning processor (clean_gcf) that standa
 
 ---
 
-## KEY FEATURES
+# KEY FEATURES
 
 - Ordination: PCA, PCoA, t-SNE, and constrained ordinations (CCA, CAP).
 - Clustering: K-means clustering on ordination results with metric calculation.
